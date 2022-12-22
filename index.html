@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d206b9deab.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="create-view">
+
+    <h1 class="title">Countdown Calendar</h1>
+
+    <div id="create-wrap">
+      <input type="date" id="date-input">
+      <button id="create-button">Create Countdown Calendar</button>
+    </div>
+
+    <div id="summary">
+      <span class="primary days-remaining"></span> days remaining
+      <div>
+        <span class="days-remaining"></span> days ago was
+        <span class="date-before"></span>
+      </div>
+    </div>
+
+    <div id="calendar-wrap">
+      <div id="calendar"></div>
+    </div>
+
+    <div class="controls">
+        <div class="refresh"><i class="fa fa-redo"></i></div>
+        <div class="new"><i class="far fa-calendar-plus"></i></div>
+        <div class="dark-mode-toggle"><i class="fa fa-moon"></i></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
